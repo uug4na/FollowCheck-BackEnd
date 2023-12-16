@@ -31,6 +31,18 @@ class InstagramProfile:
         print(f"Follower Count: {follower_count}")
         print(f"Following Count: {following_count}")
 
+class getNames:
+    def __init__(self, follower_count, following_count):
+        self.werCount = follower_count
+        self.ingCount = following_count
+    
+    def followingNames(self):
+        tmp = self.ingCount // 200
+        print(tmp)
+        
+
 if __name__ == "__main__":
-    instagram_profile = InstagramProfile("uug4na")
+    instagram_profile = InstagramProfile("osiris.leet")
     instagram_profile.get_id()
+    print("ANOTHER PART:")
+    # names = getNames(follower_count, following_count)
